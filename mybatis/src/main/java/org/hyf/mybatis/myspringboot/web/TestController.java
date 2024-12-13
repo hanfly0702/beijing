@@ -18,16 +18,4 @@ public class TestController {
         return a + b;
     }
 
-    @Value("${switch.turnOn}")
-    private String on;
-
-    @GetMapping("testn")
-    public void test(){
-        if ("on".equals(on)){
-            System.out.println(on);
-
-        }
-        System.out.println(on);
-    }
-
 }

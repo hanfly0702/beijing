@@ -19,6 +19,7 @@
         <module>hello</module>
         <module>mybatis</module>
         <module>hyftest</module>
+        <module>assistant</module>
     </modules>
     <properties>
         <java.version>21</java.version>

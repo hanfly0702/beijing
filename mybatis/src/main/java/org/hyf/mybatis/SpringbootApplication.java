@@ -1,20 +1,17 @@
 package org.hyf.mybatis;
 
-import ch.qos.logback.core.pattern.FormatInfo;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.ArrayList;
-
 @SpringBootApplication
+@MapperScan("org.hyf.mybatis.myspringboot.mapper")
+//@ComponentScan(basePackages = "org.hyf.mybatis.myspringboot.web")
 public class SpringbootApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootApplication.class, args);
 
 
-
-
-
-	}
+    }
 }
